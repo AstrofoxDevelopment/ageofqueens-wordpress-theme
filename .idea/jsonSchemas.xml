@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="block.json">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="block.json" />
+              <option name="relativePathToSchema" value="https://schemas.wp.org/trunk/block.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/custom-blocks/twitch-player/block.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="theme.json">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="theme.json" />
+              <option name="relativePathToSchema" value="https://schemas.wp.org/trunk/theme.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="theme.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

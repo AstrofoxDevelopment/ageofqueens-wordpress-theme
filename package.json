@@ -1,0 +1,17 @@
+{
+  "name": "ageofqueenstheme",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "dev": "wp-scripts build",
+    "watch": "wp-scripts start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/icons": "^9.15.0",
+    "@wordpress/scripts": "^25.1.0"
+  }
+}

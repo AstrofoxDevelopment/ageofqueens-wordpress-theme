@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="25ae0ff3-4a63-43f7-b907-44990060c81f" name="astrofox-age-of-queens-theme" url="">
+        <fileTransfer rootFolder="/var/www/age-of-queenscom/src/wp-content/themes/ageofqueenstheme/" accessType="SFTP" host="astrofox" port="22" sshConfigId="0db3158a-d4de-4305-88a1-b228adcb3655" sshConfig="astrofox@astrofox:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

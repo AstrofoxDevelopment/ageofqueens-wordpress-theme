@@ -1,0 +1,88 @@
+// TODO: Create a clear distinction between overrides and custom styles.
+img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+a:not(:has(img)) {
+  transform: scale(0.95);
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+a:has(img) {
+  display: inline-block;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+table {
+  width: 100%;
+
+  thead {
+    font-size: 1.2rem;
+    border: unset !important;
+
+    tr {
+      background-color: unset !important;
+    }
+  }
+
+  tr {
+    border: unset !important;
+
+    &:nth-child(odd) {
+      background-color: $transparent-white-light;
+    }
+  }
+
+  th {
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid $transparent-white !important;
+  }
+
+  td {
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid $transparent-white !important;
+    padding: 0.5rem;
+  }
+}
+
+.wp-block-post-featured-image {
+  // TODO: Maybe available now
+  // fix: Border Raidus (Not available in WordPress Editor 6.3)
+  &__overlay {
+    border-radius: $default-border-radius-small;
+    overflow: hidden;
+  }
+}
+
+.youtube-video {
+  border-radius: $default-border-radius-small;
+}
+
+// Second Column first (Mobile UX)
+@media (max-width: 782px) {
+
+  .wp-block-columns .wp-block-column:first-child {
+    order: 2;
+  }
+
+  .wp-block-columns .wp-block-column:nth-child(2) {
+    order: 1;
+  }
+
+  .wp-block-columns .wp-block-column:nth-child(3) {
+    order: 3;
+  }
+}
+

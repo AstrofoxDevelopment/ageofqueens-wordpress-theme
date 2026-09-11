@@ -1,0 +1,74 @@
+/*
+* Helpers for features not available in the block editor.
+* You will need to add these classes to the "Additional CSS Class(es)" field
+ */
+
+.border__bottom {
+  &-gold {
+    border-bottom: 1px solid rgb(241 233 227 / 0.32);
+  }
+
+  &-purple {
+    border-bottom: 1px solid $purple-500;
+  }
+
+  &-transparent-white {
+    border-bottom: 1px solid $default-border-color;
+  }
+}
+
+.border {
+  &-white-transparent {
+    border: 2px solid #ffffff36;
+  }
+}
+
+.gap {
+  &-small {
+    gap: 0.5rem;
+  }
+
+  &-medium {
+    gap: 1rem;
+  }
+
+  &-large {
+    gap: 2rem;
+  }
+}
+
+.filter {
+  &-invert {
+    filter: invert(1);
+  }
+}
+
+// parent element gets this class and the child div is the text to overlay
+.text-overlay {
+  position: relative;
+
+  // hardcoded for now for the post banner on the front page
+  > li > div {
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+  }
+}
+
+.border-radius {
+  &-small {
+    border-radius: $default-border-radius-small;
+  }
+
+  &-medium {
+    border-radius: $default-border-radius-medium;
+  }
+
+  &-big {
+    border-radius: $default-border-radius-big;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
